@@ -25,13 +25,13 @@
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-      <div class="nav nav container">
+      <nav class="nav nav container">
         <a href="#" class="nav__logo">Yoga</a>
 
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
             <li class="nav__item">
@@ -53,11 +53,18 @@
           </div>
         </div>
 
-        <!-- Toggle button -->
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-apps-2-line"></i>
+        <div class="nav__buttons">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+           <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+          </div>
         </div>
-      </div>
+
+       
+      </nav>
     </header>
 
     <!--==================== MAIN ====================-->
@@ -90,8 +97,8 @@
 
             <div class="home__box">
               <div>
-                <h3>300</h3>
-                <span>Class</span>
+                <h3>300+</h3>
+                <span>Yoga Class</span>
               </div>
 
               <div>
@@ -236,29 +243,164 @@
               ></a>
             </div>
 
-            <img src="assets/img/follow-yoga-1.png" alt="follow image" class="follow__img-1">
-            <img src="assets/img/follow-yoga-2.png" alt="follow image" class="follow__img-2">
+            <img
+              src="assets/img/follow-yoga-1.png"
+              alt="follow image"
+              class="follow__img-1"
+            />
+            <img
+              src="assets/img/follow-yoga-2.png"
+              alt="follow image"
+              class="follow__img-2"
+            />
           </div>
 
           <div class="follow__content-2">
-            <img src="assets/img/follow-yoga-3.png" alt="follow image" class="follow__img-3">
-            <img src="assets/img/follow-yoga-4.png" alt="follow image" class="follow__img-4">
-
+            <img
+              src="assets/img/follow-yoga-3.png"
+              alt="follow image"
+              class="follow__img-3"
+            />
+            <img
+              src="assets/img/follow-yoga-4.png"
+              alt="follow image"
+              class="follow__img-4"
+            />
           </div>
         </div>
       </section>
 
       <!--==================== JOIN ====================-->
-      <section class="join section"></section>
+      <section class="join section">
+        <div class="join__container container grid">
+          <div class="join__content">
+            <div>
+              <h2 class="join__title">Join our newsletter</h2>
+
+              <p class="join__description">
+                Subscribe to our newsletter to be aware of many things on
+                discounts, gifts, training and much more. Just enter your email.
+              </p>
+            </div>
+
+            <form action="" class="join__form">
+              <input
+                type="text"
+                class="join__input"
+                placeholder="For latest update send mail"
+              />
+              <button type="submit" class="button join__button">
+                Subscribe
+                <i class="ri-arrow-right-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div class="footer__content grid">
+          <div>
+            <a href="#" class="footer__logo">Yoga</a>
+
+            <p class="footer__description">
+              Take care of your health and <br />
+              your mind with the best <br />
+              Yoga classes.
+            </p>
+          </div>
+
+          <div class="footer__data grid">
+            <div>
+              <h3 class="footer__title">Address</h3>
+              <p class="footer__info">
+                12345 M/01 Sol <br />
+                Avenue, Lima, Peru
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Contact</h3>
+              <p class="footer__info">
+                +123 456 7890 <br />
+                yoga@email.com
+              </p>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Office</h3>
+              <p class="footer__info">
+                Monday - Saturday <br />
+                9AM - 10PM
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__group">
+          <ul class="footer__social">
+            <li>
+              <a
+                rel="noopener"
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener"
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener"
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <!-- <i class="ri-twitter-x-line"></i> -->
+                <i class="ri-twitter-line"></i>
+              </a>
+            </li>
+
+            <li>
+              <a
+                rel="noopener"
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__social-link"
+              >
+                <i class="ri-youtube-line"></i>
+              </a>
+            </li>
+          </ul>
+
+          <span class="footer__copy">
+            &#169; Copyright . All rights reserved
+          </span>
+        </div>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
-    <script src=""></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
